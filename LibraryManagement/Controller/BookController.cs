@@ -5,6 +5,8 @@ namespace LibraryManagement.Controller
 {
     [ApiController]
     [Route("api/[controller]")]
+
+    //[Route("error")] //isme [controller] attribute nahi hai to route name fix ho gaya abhi class name se error/Error replace nahi hoga only /error fix rahe ga
     public class BookController : ControllerBase
     {
         private readonly IBookService _bookService;
